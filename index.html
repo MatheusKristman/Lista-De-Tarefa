@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Lista De Tarefas</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+
+        <form onsubmit="addElement()">
+            <input class="addTxt" type="text" placeholder="Digite sua tarefa aqui" >
+            <button class="addBtn"><i class="material-icons">add</i> </button>            
+        </form>
+        <button class="removeList" onclick="clearAll()"><i class="material-icons">delete</i></button>
+        
+        
+
+        <div class="list">
+        <ul id="ul" >  
+                                         
+        </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

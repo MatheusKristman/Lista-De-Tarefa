@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;     
+    /* background-image: linear-gradient(45deg, #a650bb, #eb2986) ;       */
+    background-image: linear-gradient(120deg, #355C7D, #6C5B7B, #C06C84);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f8f8;
+    text-align: center;
+    max-width: 610px;
+    max-height: 600px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px #3c3c3c;
+    padding: 50px;
+    margin: auto;
+      
+}
+
+input, button, .removeList{
+    position: relative;
+    right: 21px;
+    padding: 0.5rem;    
+    font-size: 2rem;
+    border: none;
+    background: white;   
+}
+
+button, .removeList{
+    color: #C06C84;
+    background: #f8f8f8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.removeList{
+    position: absolute;
+    bottom: 418px;
+    right: 50px;
+}
+
+button:hover{
+    background: #C06C84;
+    color: #f8f8f8;
+}
+
+ul{ 
+    margin-top: 3px;
+    margin-left: 0px;
+    padding-top: 8px;    
+    background: #f8f8f8;
+    width: 493px;
+    height: 360px;
+    overflow: auto;    
+}
+
+ul::-webkit-scrollbar{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.element  {
+    position: relative;
+    height: fit-content;
+    width: 390px;
+    bottom: 12px;
+    right: 40px;    
+    margin-left: 4px;      
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    /* padding-top: 20px;         */
+    list-style-type: none;
+    color: black;
+    text-align: left;      
+    font-size: 35px;
+    line-height: 35px;
+    word-wrap: break-word;
+    font-family: 'Dongle', sans-serif;  
+}
+
+#checked{
+    position: absolute;
+    left: 380px;
+    top: 20%;
+    color: black;
+    background: #f8f8f8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+#checked:hover{
+    color: #C06C84;
+}
+
+#remove{
+    position: absolute;
+    left: 425px;
+    top: 20%;
+    color: black;
+    background: #f8f8f8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+#remove:hover{
+    color: #C06C84
+}
+
